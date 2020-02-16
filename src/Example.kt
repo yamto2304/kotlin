@@ -1,22 +1,9 @@
 package hello
-class Bat: AnimalInterface, BirdInterface{
-    override  fun walk(){
-        super.walk()
-        println("I'm a Bat, i can walk")
-    }
-    override fun fly(){
-        super.fly()
-        println("I'm a Bat, i can fly")
-    }
+import package1.ClassB
+import package2.function4
 
-    override fun eat(){
-        super<BirdInterface>.eat()
-        super<AnimalInterface>.eat()
-    }
-}
 fun main(args: Array<String>){
-    var bat: Bat = Bat()
-    bat.walk()
-    bat.eat()
-    bat.fly()
+    function4()//public class
+    var classB = ClassB() // internal class
+    //var classC = ClassC()//private class
 }
